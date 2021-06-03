@@ -18,6 +18,7 @@
     box-sizing: border-box;
     text-decoration: none;
     outline: none; border:none;
+    overflow-x: hidden;
     /* text-transform: capitalize; */
 }
 
@@ -35,9 +36,15 @@ body{
     background:#f9f9f9;
 }
 
-section{
+.MainContainer{
     min-height: 100vh;
     padding:0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+.MainSection {
+    min-height: 100vh;
+    /* padding:0 9%; */
     padding-top: 7.5rem;
     padding-bottom: 2rem;
 }
@@ -82,6 +89,7 @@ header{
     justify-content: space-between;
     z-index: 1000;
     opacity: .91;
+    margin-bottom: 0;
 }
 
 header .logo{
@@ -120,6 +128,7 @@ header label{
     align-items: center;
     justify-content: center;
     background-color:var(--tok1);
+    margin-top: 0px;
 }
 /* #home{
     
@@ -127,21 +136,31 @@ header label{
     background-size: cover;
     background-position: center;
 } */
-
-.home .image img{
+/* .homeimage2 img{
+  position: absolute;
+  padding: 0px;
+    
+    } */
+/* .home .image img{
     width:50vw;
-    /* animation: float 3s linear infinite; */
-}
+    position: absolute;
+    /* animation: float 3s linear infinite;
+} */
+.row {
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    flex: 33.33%;
+    padding: 0px;
+  }
 
-@keyframes float{
-    0%, 100%{
-        transform: translateY(0rem);
-    }
-    50%{
-        transform: translateY(-3.5rem);
-    }
-}
+.content{
+    position: absolute;
+    
 
+}
 .home .content h3{
     font-size: 5.5rem;
     color:#333;
