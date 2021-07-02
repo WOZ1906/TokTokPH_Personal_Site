@@ -40,18 +40,21 @@ body {
   background: #f9f9f9;
 }
 
+.MainSection {
+  min-height: 100vh;
+  /* overflow-x:hidden; */
+  /* padding:0 9%; */
+  /* padding-top: 7.5rem; */
+  /* padding-bottom: 2rem; */
+} 
+
 .MainContainer {
   min-height: 100vh;
   padding: 0 9%;
   padding-top: 7.5rem;
   padding-bottom: 2rem;
 }
-.MainSection {
-  min-height: 100vh;
-  /* padding:0 9%; */
-  /* padding-top: 7.5rem; */
-  padding-bottom: 2rem;
-}
+
 
 .btn {
   display: inline-block;
@@ -135,6 +138,7 @@ header label {
   justify-content: center;
   background-color: var(--tok1);
   margin-top: 0px;
+
 }
 /* #home{
     
@@ -154,11 +158,15 @@ header label {
 } */
 .row {
   display: flex;
+  height: 100vh;
+  overflow:hidden;
 }
 
 /* Create three equal columns that sits next to each other */
 .column {
   flex: 33.33%;
+  background-size: cover;
+  overflow:hidden;
   /* padding: px; */
 }
 
